@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regular CSS Project</title>
+  <style>
+    body {
+      background-color: #f3f4f6;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    
+    .form-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      width: 100%;
+      max-width: 448px;
+      margin: 0 auto;
+    }
+    
+    .form-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #1f2937;
+    }
+    
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #374151;
+      margin-bottom: 0.25rem;
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 0.375rem;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    
+    .form-input:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+    }
+    
+    .button-group {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+    }
+    
+    .submit-button {
+      background-color: #2563eb;
+      color: white;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 0.375rem;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .submit-button:hover {
+      background-color: #1d4ed8;
+    }
+    
+    .cancel-link {
+      color: #2563eb;
+      align-self: center;
+      text-decoration: none;
+    }
+    
+    .cancel-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 class="form-title">Tambah Data Dosen Baru</h2>
+
+    <form method="" action="" class="form">
+      <div class="form-group">
+        <label class="form-label">NID</label>
+        <input type="text" name="nid" required maxlength="20" class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Nama Dosen</label>
+        <input type="text" name="nama" required maxlength="50" class="form-input" />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Program Studi</label>
+        <input type="text" name="prodi" required maxlength="30" class="form-input" />
+      </div>
+
+      <div class="button-group">
+        <button type="submit" name="submit" class="submit-button">
+          Simpan Data
+        </button>
+        <a href="#" class="cancel-link">Batal</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
